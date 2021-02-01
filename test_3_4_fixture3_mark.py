@@ -31,3 +31,6 @@ class TestMainPage1():
 # запуск pytest -s -v -m smoke test_3_4_fixture3_mark.py
 # pytest -s -v -m "not smoke" test_fixture8.py
 # pytest -s -v -m "smoke or/and regression" test_fixture8.py
+# пропустить тест @pytest.mark.skip
+# @pytest.mark.xfail(reason="fixing this bug right now") - пропустить баг, который фиксят
+# запуск pytest -rx -v test_fixture10a.py
